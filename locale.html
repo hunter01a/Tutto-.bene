@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Il Locale — Tuttobene Campi Bisenzio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="tb-logo">
+      <text x="0" y="58" font-family="'Josefin Sans',sans-serif" font-weight="200" font-size="64" letter-spacing="10" fill="currentColor">TUTT</text>
+      <circle cx="223.8" cy="36" r="26" fill="none" stroke="currentColor" stroke-width="5.5"/>
+      <path d="M 206.8 72 Q 223.8 84 240.8 72" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/>
+      <text x="262.8" y="58" font-family="'Josefin Sans',sans-serif" font-weight="200" font-size="64" letter-spacing="10" fill="currentColor">BENE</text>
+    </g>
+  </defs>
+</svg>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" aria-label="Tuttobene" style="color:var(--rosso)">
+      <svg viewBox="0 0 464 90"><use href="#tb-logo"/></svg>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#storia">Storia</a>
+      <a href="pasta.html">Pasta Fresca</a>
+      <a href="feste.html">Le Feste</a>
+      <a href="premi.html">Premi</a>
+      <a href="en/locale.html" class="lang-flag" title="English">EN</a>
+      <a href="index.html#catering" class="nav-cta">Prenota</a>
+      <button class="burger" id="burger" aria-label="Apri menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#storia">Storia</a>
+  <a href="locale.html">Il Locale</a>
+  <a href="pasta.html">Pasta Fresca</a>
+  <a href="feste.html">Le Feste</a>
+  <a href="premi.html">Premi & Menzioni</a>
+  <a href="index.html#catering">Catering</a>
+  <a href="en/locale.html">English →</a>
+  <a href="index.html#catering" class="mm-cta">Prenota</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; <a href="index.html#esplora">Esplora</a> &nbsp;/&nbsp; <span>Il Locale</span></div>
+    <span class="label">Una passeggiata</span>
+    <h1>Dentro il Locale</h1>
+    <div class="rule"></div>
+    <p style="max-width:700px;color:var(--grigio);font-size:1.12rem;margin-top:26px">Scorri verso il basso e cammina con noi: dalla facciata ad arco della vecchia struttura industriale fino alla scalinata della galleria, passando per il bancone e la bottega. Cinque scorci, un unico respiro.</p>
+  </div>
+</section>
+
+<div class="pano" id="pano">
+  <div class="pano-sticky">
+    <div class="pano-hint">Scorri ↓ per camminare nel locale</div>
+    <div class="pano-track">
+      <div class="pano-slide">
+        <img src="img/locale-facciata.jpg" alt="La facciata ad arco del Tuttobene illuminata all'ora blu">
+        <div class="pano-cap"><b>01</b> · La facciata: l'arco della struttura, reinventato</div>
+      </div>
+      <div class="pano-slide">
+        <img src="img/locale-shop.jpg" alt="L'ingresso con la bottega, le vetrine e le lanterne di carta">
+        <div class="pano-cap"><b>02</b> · L'ingresso: bottega, profumi e lanterne di carta</div>
+      </div>
+      <div class="pano-slide">
+        <img src="img/locale-dallalto.jpg" alt="La sala vista dall'alto con il murale delle mani">
+        <div class="pano-cap"><b>03</b> · La sala dall'alto, sotto il murale delle mani</div>
+      </div>
+      <div class="pano-slide">
+        <img src="img/locale-bancone-sera.jpg" alt="Il bancone del bar la sera con le luci soffuse">
+        <div class="pano-cap"><b>04</b> · Il bancone la sera, quando cambia la luce</div>
+      </div>
+      <div class="pano-slide">
+        <img src="img/locale-scala.jpg" alt="La scalinata con la statua e i pannelli d'arte">
+        <div class="pano-cap"><b>05</b> · La scalinata della galleria, con la sua statua</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section style="background:var(--bianco)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">I dettagli</span>
+      <h2>Le mani che lo fanno vivere</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="cat-grid stagger">
+      <figure class="cat-item big">
+        <img src="img/team-brigata.jpg" alt="La brigata del Tuttobene con la miscela Masini" loading="lazy" style="object-position:center 40%">
+        <figcaption><span>01</span> La brigata al completo, ambassador della miscela Masini</figcaption>
+      </figure>
+      <figure class="cat-item wide">
+        <img src="img/barista-macchina2.jpg" alt="Il barista al lavoro alla macchina del caffe" loading="lazy" style="object-position:30% center">
+        <figcaption><span>02</span> Alla macchina del caffè, dove tutto comincia ogni mattina</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/proprietari.jpg" alt="Marco Pasquini e Claudio Pecchioli, i fondatori, dietro il banco" loading="lazy">
+        <figcaption><span>03</span> Marco e Claudio, i fondatori — dietro il banco dal 1982</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/barista-sorriso.jpg" alt="Il barista sorride dietro la macchina del caffe" loading="lazy" style="object-position:center 30%">
+        <figcaption><span>04</span> Un sorriso e via: il servizio che ti fa sentire a casa</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="cinema">
+  <video src="videos/locale2.mp4" poster="videos/posters/locale2.jpg" autoplay muted loop playsinline></video>
+  <div class="cinema-inner reveal">
+    <span class="label">Vieni a trovarci</span>
+    <h2>Via San Quirico 233/A, Campi Bisenzio</h2>
+    <a class="cat-cta" href="index.html#catering">Prenota &middot; 055 896 9529</a>
+    <div style="margin-top:26px"><a href="pasta.html" style="color:#fff;font-family:'Josefin Sans',sans-serif;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:4px">Continua il giro: Pasta Fresca →</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo" style="color:#F6F1E8">
+          <svg viewBox="0 0 464 90"><use href="#tb-logo"/></svg>
+        </div>
+        <p style="font-style:italic">Quando il gusto diventa poesia…<br>il piacere raddoppia.</p>
+      </div>
+      <div>
+        <h4>Dove siamo</h4>
+        <p>Via San Quirico, 233/A<br>50013 Campi Bisenzio (FI)</p>
+        <p><a href="tel:+390558969529">055 896 9529</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Lun – Ven: 6.30 – 20.00<br>Sabato: 6.30 – 14.30<br>Domenica: chiuso</p>
+      </div>
+      <div>
+        <h4>Seguici</h4>
+        <p><a href="https://www.instagram.com/tuttobenebar/" target="_blank" rel="noopener">Instagram · @tuttobenebar</a><br>
+        <a href="https://www.facebook.com/tuttobenebar/" target="_blank" rel="noopener">Facebook · Tuttobene</a><br>
+        <a href="https://www.tuttobene-bar.it" target="_blank" rel="noopener">tuttobene-bar.it</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Tuttobene — Campi Bisenzio</span>
+      <span>Caffetteria · Pasticceria · Pasta Fresca · Enoteca · Catering</span>
+      <span>Sito realizzato da <a href="https://luxlab.it" target="_blank" rel="noopener" class="lux-pulse" style="color:var(--rosso-vivo);text-decoration:none;letter-spacing:.2em">LUXLAB</a></span>
+    </div>
+  </div>
+</footer>
+<script src="script.js?v=10"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+SITO TUTTOBENE — Istruzioni rapide
+===================================
+
+CONTENUTO DEL PACCHETTO
+- index.html        -> home (storia, menzioni, team, banco, dolci, catering, prenota)
+- pasta.html        -> pagina dedicata alla pasta fresca
+- feste.html        -> pagina dedicata alle feste (foto + reel)
+- premi.html        -> premi e menzioni con le foto della premiazione
+- style.css         -> stile condiviso
+- script.js         -> script condiviso (effetti + menu hamburger)
+- tuttobene.html    -> copia identica con il nome originale
+- img/              -> tutte le 31 foto del sito
+
+METTERLO ONLINE SU GITHUB PAGES
+1. Crea un repository su GitHub (es. "tuttobene")
+2. Carica index.html e la cartella img/ (trascinale nella pagina del repo)
+3. Settings -> Pages -> Source: Deploy from a branch -> Branch: main -> Save
+4. Dopo 1-2 minuti il sito e' su https://TUONOME.github.io/tuttobene/
+
+VEDERLO IN LOCALE (con i video Instagram funzionanti)
+1. Apri il terminale in questa cartella
+2. python -m http.server 8000
+3. Browser su http://localhost:8000
+
+NOTE
+- I reel Instagram si caricano solo da server (GitHub Pages o localhost),
+  non aprendo il file col doppio click: e' normale.
+- Le foto stanno in img/: per aggiungerne basta copiarle li' e duplicare
+  un blocco <figure class="cat-item"> nell'HTML.
+- Numero del locale gia' collegato ai pulsanti: 055 896 9529.

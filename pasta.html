@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>La Pasta Fresca — Tuttobene Campi Bisenzio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="tb-logo">
+      <text x="0" y="58" font-family="'Josefin Sans',sans-serif" font-weight="200" font-size="64" letter-spacing="10" fill="currentColor">TUTT</text>
+      <circle cx="223.8" cy="36" r="26" fill="none" stroke="currentColor" stroke-width="5.5"/>
+      <path d="M 206.8 72 Q 223.8 84 240.8 72" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/>
+      <text x="262.8" y="58" font-family="'Josefin Sans',sans-serif" font-weight="200" font-size="64" letter-spacing="10" fill="currentColor">BENE</text>
+    </g>
+  </defs>
+</svg>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" aria-label="Tuttobene" style="color:var(--rosso)">
+      <svg viewBox="0 0 464 90"><use href="#tb-logo"/></svg>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#storia">Storia</a>
+      <a href="pasta.html">Pasta Fresca</a>
+      <a href="feste.html">Le Feste</a>
+      <a href="premi.html">Premi</a>
+      <a href="en/pasta.html" class="lang-flag" title="English">EN</a>
+      <a href="index.html#catering" class="nav-cta">Prenota</a>
+      <button class="burger" id="burger" aria-label="Apri menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#storia">Storia</a>
+  <a href="locale.html">Il Locale</a>
+  <a href="pasta.html">Pasta Fresca</a>
+  <a href="feste.html">Le Feste</a>
+  <a href="premi.html">Premi & Menzioni</a>
+  <a href="index.html#catering">Catering</a>
+  <a href="en/pasta.html">English →</a>
+  <a href="index.html#catering" class="mm-cta">Prenota</a>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; <a href="index.html#esplora">Esplora</a> &nbsp;/&nbsp; <span>Pasta Fresca</span></div>
+    <span class="label">Il laboratorio</span>
+    <h1>La Pasta Fresca, fatta a mano</h1>
+    <div class="rule"></div>
+  </div>
+</section>
+
+<section id="pasta">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Il laboratorio</span>
+      <h2>La pasta fresca, fatta a mano</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="pasta-grid">
+      <div class="reveal">
+        <p style="font-size:1.18rem;color:var(--grigio);max-width:520px">Nel locale batte un cuore di farina e uova: il laboratorio di pasta fresca a vista, dove ogni giorno le mani esperte della brigata tirano la sfoglia come si faceva una volta. Vendita diretta e ravioli espressi, dal mattarello al piatto.</p>
+        <ul class="pasta-list">
+          <li><span class="n">01</span><div><h3>Tortellini & Tortelloni</h3><p>Chiusi a mano uno a uno, con ripieni della tradizione: ricotta e spinaci, patate alla mugellana, burrata.</p></div></li>
+          <li><span class="n">02</span><div><h3>Sfoglia verde agli spinaci</h3><p>La pasta verde di una volta: spinaci freschi impastati nella sfoglia, per tagliatelle e lasagne dal colore vivo.</p></div></li>
+          <li><span class="n">03</span><div><h3>Tagliatelle & pasta lunga</h3><p>Tirate e tagliate in casa — celebri quelle al tartufo, citate dai clienti come imperdibili. Anche pici senza uovo.</p></div></li>
+          <li><span class="n">04</span><div><h3>Ravioli espressi</h3><p>Preparati al momento e venduti anche da portare a casa: la pasta del Tuttobene sulla tavola di tutti i giorni.</p></div></li>
+        </ul>
+      </div>
+      <div class="pasta-photos reveal">
+        <figure class="pp big"><img src="img/tortelloni-verdi.jpg" alt="I tortelloni verdi agli spinaci tagliati a mano con la rotella" loading="lazy"><figcaption>I tortelloni verdi agli spinaci, tagliati a mano con la rotella</figcaption></figure>
+        <figure class="pp"><img src="img/tortellone-mani.jpg" alt="Tortellone chiuso a mano nel laboratorio" loading="lazy"><figcaption>Il tortellone, chiuso a mano</figcaption></figure>
+        <figure class="pp"><img src="img/pasta-tuttobene-art.jpg" alt="I ravioli del Tuttobene in equilibrio col logo" loading="lazy"><figcaption>I nostri ravioli, in posa d'autore</figcaption></figure>
+        <figure class="pp"><img src="img/sfoglia-macchina.png" alt="La sfoglia appena tirata" loading="lazy"><figcaption>La sfoglia, tirata ogni mattina</figcaption></figure>
+        <figure class="pp big"><img src="img/banco-pasta.png" alt="Il banco della pasta fresca con i ripieni del giorno" loading="lazy"><figcaption>Il banco: ripieni del giorno e vendita diretta</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--bianco)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Come lavoriamo</span>
+      <h2>Dal laboratorio al piatto</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="craft-grid">
+      <div>
+        <div class="craft-item reveal">
+          <div class="craft-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div>
+            <h3>Ogni mattina, da zero</h3>
+            <p>Farina, uova fresche e — per la sfoglia verde — spinaci freschi impastati direttamente nell'impasto. Niente semilavorati: la sfoglia nasce ogni giorno nel laboratorio a vista.</p>
+          </div>
+        </div>
+        <div class="craft-item reveal">
+          <div class="craft-ico"><svg viewBox="0 0 24 24"><path d="M4 12h16M4 12c0-4 3-7 8-7s8 3 8 7M4 12c0 4 3 7 8 7s8-3 8-7"/></svg></div>
+          <div>
+            <h3>I ripieni del giorno</h3>
+            <p>Ricotta e spinaci, patate alla mugellana, burrata: i cartellini sul banco cambiano con le stagioni. E per chi non mangia l'uovo, ci sono i pici senza uovo.</p>
+          </div>
+        </div>
+        <div class="craft-item reveal">
+          <div class="craft-ico"><svg viewBox="0 0 24 24"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9zM3 9l2-5h14l2 5"/></svg></div>
+          <div>
+            <h3>Vendita diretta & ravioli espressi</h3>
+            <p>La pasta del banco si porta a casa nelle confezioni del Tuttobene, oppure si gusta al momento al punto pranzo: ravioli espressi, tagliatelle al tartufo, lasagne verdi.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="arte-photo reveal">
+        <img src="img/banco-pasta.png" alt="Il banco della pasta fresca con i ripieni del giorno e le confezioni" loading="lazy">
+        <figcaption>Il banco della pasta: ripieni esposti, cartellini scritti a mano e confezioni da portare via.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section style="background:linear-gradient(160deg,var(--rosso) 0%, #9c0c23 100%);padding:80px 0;text-align:center">
+  <div class="wrap">
+    <p style="color:#fff;font-size:1.3rem;font-style:italic;margin-bottom:30px">Vuoi organizzare qualcosa con noi?</p>
+    <a class="cat-cta" style="background:#fff;color:var(--rosso)" href="index.html#prenota">Prenota · 055 896 9529</a>
+    <div style="margin-top:26px"><a href="feste.html" style="color:#fff;font-family:'Josefin Sans',sans-serif;font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:4px">Continua il giro: Le Feste →</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo" style="color:#F6F1E8">
+          <svg viewBox="0 0 464 90"><use href="#tb-logo"/></svg>
+        </div>
+        <p style="font-style:italic">Quando il gusto diventa poesia…<br>il piacere raddoppia.</p>
+      </div>
+      <div>
+        <h4>Dove siamo</h4>
+        <p>Via San Quirico, 233/A<br>50013 Campi Bisenzio (FI)</p>
+        <p><a href="tel:+390558969529">055 896 9529</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Lun – Ven: 6.30 – 20.00<br>Sabato: 6.30 – 14.30<br>Domenica: chiuso</p>
+      </div>
+      <div>
+        <h4>Seguici</h4>
+        <p><a href="https://www.instagram.com/tuttobenebar/" target="_blank" rel="noopener">Instagram · @tuttobenebar</a><br>
+        <a href="https://www.facebook.com/tuttobenebar/" target="_blank" rel="noopener">Facebook · Tuttobene</a><br>
+        <a href="https://www.tuttobene-bar.it" target="_blank" rel="noopener">tuttobene-bar.it</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Tuttobene — Campi Bisenzio</span>
+      <span>Caffetteria · Pasticceria · Pasta Fresca · Enoteca · Catering</span>
+      <span>Sito realizzato da <a href="https://luxlab.it" target="_blank" rel="noopener" class="lux-pulse" style="color:var(--rosso-vivo);text-decoration:none;letter-spacing:.2em">LUXLAB</a></span>
+    </div>
+  </div>
+</footer>
+<script src="script.js?v=10"></script>
+</body>
+</html>

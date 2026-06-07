@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Tuttobene — Quando il gusto diventa poesia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="tb-logo">
+      <text x="0" y="58" font-family="'Josefin Sans',sans-serif" font-weight="200" font-size="64" letter-spacing="10" fill="currentColor">TUTT</text>
+      <circle cx="223.8" cy="36" r="26" fill="none" stroke="currentColor" stroke-width="5.5"/>
+      <path d="M 206.8 72 Q 223.8 84 240.8 72" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/>
+      <text x="262.8" y="58" font-family="'Josefin Sans',sans-serif" font-weight="200" font-size="64" letter-spacing="10" fill="currentColor">BENE</text>
+    </g>
+  </defs>
+</svg>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" aria-label="Tuttobene" style="color:var(--rosso)">
+      <svg viewBox="0 0 464 90"><use href="#tb-logo"/></svg>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#storia">Storia</a>
+      <a href="pasta.html">Pasta Fresca</a>
+      <a href="feste.html">Le Feste</a>
+      <a href="premi.html">Premi</a>
+      <a href="en/index.html" class="lang-flag" title="English">EN</a>
+      <a href="index.html#catering" class="nav-cta">Prenota</a>
+      <button class="burger" id="burger" aria-label="Apri menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#storia">Storia</a>
+  <a href="locale.html">Il Locale</a>
+  <a href="pasta.html">Pasta Fresca</a>
+  <a href="feste.html">Le Feste</a>
+  <a href="premi.html">Premi & Menzioni</a>
+  <a href="index.html#catering">Catering</a>
+  <a href="en/index.html">English →</a>
+  <a href="index.html#catering" class="mm-cta">Prenota</a>
+</div>
+
+<header id="top">
+  <div class="hero-glow"></div>
+  <div class="hero-ring r1"></div>
+  <div class="hero-ring r2"></div>
+  <div class="hero-inner">
+    <div class="hero-logo" id="heroLogo">
+      <svg viewBox="0 0 464 95"><use href="#tb-logo"/></svg>
+    </div>
+    <p class="hero-motto">«Quando il gusto diventa <em>poesia</em>… il piacere raddoppia»</p>
+    <p class="hero-sub">Bar · Pasticceria · Pasta Fresca · Enoteca — Campi Bisenzio, dal 1982</p>
+    <div class="hero-badges">
+      <div class="badge"><b>Gambero Rosso</b> · 3 tazzine, 3 chicchi ★★</div>
+      <div class="badge"><b>Best Bakery</b> · Sky Uno, vincitore</div>
+      <div class="badge"><b>Corriere</b> · Top 15 caffè d'Italia</div>
+    </div>
+  </div>
+  <div class="scroll-hint"></div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="mq">
+    <span>Caffetteria</span><span class="alt">Pasticceria</span><span>Pasta Fresca</span><span class="alt">Enoteca</span><span>Gastronomia</span><span class="alt">Catering</span><span>Aperitivi</span><span class="alt">Dal 1982</span>
+  </div>
+</div>
+
+<section id="storia">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">La nostra storia</span>
+      <h2>Quarant'anni fianco a fianco</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="timeline">
+      <div class="t-item reveal">
+        <div class="t-year">1982</div>
+        <h3>C'era una volta il Bar Tucano</h3>
+        <p>Marco Pasquini e Claudio Pecchioli iniziano la loro avventura a Calenzano, da pionieri della caffetteria nei sobborghi di Firenze. In anni in cui il bar era solo un punto di ritrovo, loro vogliono portare il bello, il gusto e il benessere — pranzi veloci per i lavoratori, attenzione all'estetica, qualità senza compromessi.</p>
+      </div>
+      <div class="t-item reveal">
+        <div class="t-year">~2000</div>
+        <h3>Nasce Tuttobene</h3>
+        <p>La svolta: apre il primo locale TuttoBene nella zona industriale di Campi Bisenzio. Un grande bar-pasticceria-bistrò con produzione propria — dalle paste della colazione ai lievitati, dalla gastronomia al laboratorio di pasta fresca — in un ambiente dallo stile industriale ma di gusto.</p>
+      </div>
+      <div class="t-item reveal">
+        <div class="t-year">2002</div>
+        <h3>Il Gambero Rosso</h3>
+        <p>Tuttobene entra nella guida Bar d'Italia del Gambero Rosso tra i migliori bar del Paese. Dieci anni dopo arriva anche l'ambita stella, e negli anni le tre tazzine e i tre chicchi: il massimo riconoscimento. «Obiettivo raggiunto grazie anche ai nostri collaboratori», dice Marco.</p>
+      </div>
+      <div class="t-item reveal">
+        <div class="t-year">Oggi</div>
+        <h3>Una famiglia di locali</h3>
+        <p>Il gruppo conta sei locali nell'hinterland fiorentino, ognuno autogestito ma legato dal marchio TB e dalla stessa filosofia. L'ultimo capitolo: aiutare le storiche collaboratrici ad aprire un locale tutto loro, il Bar Quotidiano, verso Prato.</p>
+      </div>
+    </div>
+    <figure class="locale-wide reveal">
+      <img src="img/locale-interno.jpg" alt="L'interno del Tuttobene: il grande bancone centrale e le lampade sferiche" loading="lazy">
+      <figcaption>Il locale di Campi Bisenzio: il grande bancone centrale, cuore di tutto.</figcaption>
+    </figure>
+    <div class="quote-block reveal">
+      <p>TB è un modo di essere che si trasforma in pensare, creare e cucinare al meglio ciò che ci sta più a cuore: la bontà. I nostri ingredienti? Mente, cuore e buongusto.</p>
+      <cite>— La filosofia Tuttobene</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPROFONDIMENTI ============ -->
+<section id="esplora" style="background:var(--beige2)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Le pagine</span>
+      <h2>Esplora il Tuttobene</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="teaser-grid stagger">
+      <a class="teaser" href="pasta.html">
+        <img src="img/tortelloni-verdi.jpg" alt="I tortelloni verdi del laboratorio di pasta fresca" loading="lazy">
+        <div class="t-overlay">
+          <span class="t-label">Il laboratorio</span>
+          <h3>La Pasta Fresca</h3>
+          <span class="t-go">Scopri di più →</span>
+        </div>
+      </a>
+      <a class="teaser" href="feste.html">
+        <img src="img/natale-vetrina.jpg" alt="La vetrina natalizia del Tuttobene" loading="lazy">
+        <div class="t-overlay">
+          <span class="t-label">Tutto l'anno</span>
+          <h3>Le Feste</h3>
+          <span class="t-go">Scopri di più →</span>
+        </div>
+      </a>
+      <a class="teaser" href="locale.html">
+        <img src="img/locale-facciata.jpg" alt="La facciata ad arco del Tuttobene illuminata la sera" loading="lazy">
+        <div class="t-overlay">
+          <span class="t-label">Una passeggiata</span>
+          <h3>Il Locale</h3>
+          <span class="t-go">Scopri di più →</span>
+        </div>
+      </a>
+      <a class="teaser" href="premi.html">
+        <img src="img/premiazione-palco.jpg" alt="La premiazione del Gambero Rosso" loading="lazy">
+        <div class="t-overlay">
+          <span class="t-label">I riconoscimenti</span>
+          <h3>Premi & Menzioni</h3>
+          <span class="t-go">Scopri di più →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="menzioni" style="background:var(--beige)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Chi parla di noi</span>
+      <h2>Menzioni & Premi</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="press-grid stagger">
+      <div class="press-card tilt">
+        <div class="src">Gambero Rosso · Bar d'Italia</div>
+        <div class="chicchi">
+          <svg viewBox="0 0 24 24" class="ico-svg"><path d="M4 8h12v5a6 6 0 0 1-12 0V8z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 9h2a2.5 2.5 0 0 1 0 5h-2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <svg viewBox="0 0 24 24" class="ico-svg"><path d="M4 8h12v5a6 6 0 0 1-12 0V8z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 9h2a2.5 2.5 0 0 1 0 5h-2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <svg viewBox="0 0 24 24" class="ico-svg"><path d="M4 8h12v5a6 6 0 0 1-12 0V8z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 9h2a2.5 2.5 0 0 1 0 5h-2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span class="sep">·</span>
+          <svg viewBox="0 0 24 24" class="ico-svg"><path d="M12 3C7 3 4 7 4 11c0 6 4 10 8 10s8-4 8-10c0-4-3-8-8-8z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3c-2 4-2 14 0 18" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+          <svg viewBox="0 0 24 24" class="ico-svg"><path d="M12 3C7 3 4 7 4 11c0 6 4 10 8 10s8-4 8-10c0-4-3-8-8-8z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3c-2 4-2 14 0 18" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+          <svg viewBox="0 0 24 24" class="ico-svg"><path d="M12 3C7 3 4 7 4 11c0 6 4 10 8 10s8-4 8-10c0-4-3-8-8-8z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3c-2 4-2 14 0 18" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+          <span class="sep">·</span>
+          <svg viewBox="0 0 24 24" class="ico-svg"><path d="M12 2.5l2.6 5.8 6.3.6-4.8 4.2 1.4 6.2L12 16l-5.5 3.3 1.4-6.2-4.8-4.2 6.3-.6L12 2.5z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 24 24" class="ico-svg"><path d="M12 2.5l2.6 5.8 6.3.6-4.8 4.2 1.4 6.2L12 16l-5.5 3.3 1.4-6.2-4.8-4.2 6.3-.6L12 2.5z" fill="currentColor"/></svg>
+        </div>
+        <p>Tre Tazzine e Tre Chicchi: il massimo della guida Bar d'Italia — la "stella Michelin" dei bar. E la doppia stella ★★, riservata a chi resta al vertice per oltre vent'anni consecutivi.</p>
+        <a class="src-link" href="https://www.intoscana.it/it/guida-bar-ditalia-i-quattro-locali-in-toscana-dove-il-caffe-e-al-top/" target="_blank" rel="noopener">Leggi l'articolo →</a>
+      </div>
+      <div class="press-card tilt">
+        <div class="src">Best Bakery · Sky Uno</div>
+        <div class="big">Vincitore</div>
+        <p>Migliore pasticceria di Firenze e dintorni: 49 punti dai maestri pasticceri, conquistando il cappello d'oro grazie a cura del dettaglio e sapori bilanciati.</p>
+        <a class="src-link" href="https://www.firenzetoday.it/social/best-bakery-firenze-vince-tuttobene.html" target="_blank" rel="noopener">Leggi l'articolo →</a>
+      </div>
+      <div class="press-card tilt">
+        <div class="src">Premio Illy · Gambero Rosso</div>
+        <div class="big">Bar dell'Anno</div>
+        <p>Menzione speciale della giuria al premio "Bar dell'anno" 2013, «per la giusta mediazione tra alta qualità e grandi numeri».</p>
+        <a class="src-link" href="https://www.piananotizie.it/campi-bisenzio-tuttobene-riceve-la-menzione-speciale-del-premio-bar-dellanno/" target="_blank" rel="noopener">Leggi l'articolo →</a>
+      </div>
+      <div class="press-card tilt">
+        <div class="src">Corriere della Sera</div>
+        <div class="big">Top 15</div>
+        <p>Citato tra «i 15 locali dove bere il caffè migliore di sempre»: lievitati, cremini, scendiletto e altre delizie.</p>
+        <a class="src-link" href="https://www.corriere.it/cook/" target="_blank" rel="noopener">Corriere Cook →</a>
+      </div>
+      <div class="press-card tilt">
+        <div class="src">Falstaff</div>
+        <div class="big">Guida</div>
+        <p>Segnalato dalla prestigiosa guida internazionale Falstaff tra le pasticcerie e i caffè da non perdere.</p>
+        <a class="src-link" href="https://www.falstaff.com/it/pasticcerie/tuttobene" target="_blank" rel="noopener">Vedi la scheda →</a>
+      </div>
+      <div class="press-card tilt">
+        <div class="src">Google & Tripadvisor</div>
+        <div class="big" style="display:flex;align-items:center;gap:10px">4,5 <svg viewBox="0 0 24 24" width="26" height="26" style="color:var(--rosso)"><path d="M12 2.5l2.6 5.8 6.3.6-4.8 4.2 1.4 6.2L12 16l-5.5 3.3 1.4-6.2-4.8-4.2 6.3-.6L12 2.5z" fill="currentColor"/></svg></div>
+        <p>Oltre 3.400 recensioni su Google e quasi 500 su Tripadvisor: «top di gamma», «pasticceria da urlo». Travellers' Choice e n. 1 delle caffetterie di Campi Bisenzio.</p>
+        <a class="src-link" href="https://www.tripadvisor.it/Restaurant_Review-g676808-d2459313-Reviews-Bar_Pasticceria_Tuttobene-Campi_Bisenzio_Tuscany.html" target="_blank" rel="noopener">Leggi le recensioni →</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:50px">
+      <a class="cat-cta" href="premi.html">Tutti i premi e le foto →</a>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Le persone</span>
+      <h2>Una squadra affiatata</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="team-grid stagger">
+      <div class="t-card">
+        <div class="t-init">MP</div>
+        <h3>Marco Pasquini</h3>
+        <div class="t-role">Co-fondatore & Titolare</div>
+        <p>Dal 1982 con Claudio, anima del gruppo TB. «Affidandoci ai nostri collaboratori siamo cresciuti e abbiamo aperto nuovi locali che riflettono la nostra ricerca del bello, del gusto e del benessere.»</p>
+      </div>
+      <div class="t-card">
+        <div class="t-init">CP</div>
+        <h3>Claudio Pecchioli</h3>
+        <div class="t-role">Co-fondatore & Titolare</div>
+        <p>Quarant'anni di mestiere e una certezza: «L'unico obiettivo è venire incontro alle esigenze delle persone». Custode delle tradizioni, dal panettone alla pasticceria classica.</p>
+      </div>
+      <div class="t-card">
+        <div class="t-init">M&A</div>
+        <h3>Maurizio & Alessandro</h3>
+        <div class="t-role">Gli storici del Tuttobene</div>
+        <p>Volti di casa al banco e in sala: professionalità, memoria del locale e quel sorriso che fa sentire ogni cliente come a casa propria, ogni giorno dalle prime luci dell'alba.</p>
+      </div>
+      <div class="t-card">
+        <div class="t-init">S·M·J</div>
+        <h3>Sara, Melissa & Jessica</h3>
+        <div class="t-role">Da dipendenti a titolari</div>
+        <p>Dopo dieci anni dietro il banco di Tuttobene, con il sostegno di Marco e Claudio hanno aperto il Bar Quotidiano: la dimostrazione che qui i talenti crescono e diventano famiglia.</p>
+      </div>
+      <div class="t-card">
+        <div class="t-init">TB</div>
+        <h3>I ragazzi & tutta la brigata</h3>
+        <div class="t-role">Cuochi · Pasticceri · Baristi</div>
+        <p>Ogni pietanza è cucinata sul posto da cuochi e pasticceri: una squadra giovane ed efficiente che arricchisce il lavoro, giorno per giorno, di stimoli e dettagli preziosi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="banco" style="background:var(--bianco)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Dalla mattina alla sera</span>
+      <h2>Il banco di ogni giorno</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="cat-grid stagger">
+      <figure class="cat-item big">
+        <img src="img/cornetti-sfornati.jpg" alt="Cornetti appena sfornati, lucidi di doratura" loading="lazy">
+        <figcaption><span>01</span> I cornetti appena usciti dal forno, ogni mattina alle 6.30</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/cornetti-crudi.jpg" alt="Cornetti in lievitazione nel laboratorio" loading="lazy">
+        <figcaption><span>02</span> La lievitazione notturna nel laboratorio</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/macedonia.jpg" alt="Coppe di macedonia con fragole, kiwi e ananas" loading="lazy">
+        <figcaption><span>03</span> Macedonia di frutta fresca, tagliata al momento</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/banco-gastronomia.jpg" alt="Il bancone della gastronomia con verdure e piatti pronti" loading="lazy">
+        <figcaption><span>04</span> La gastronomia: verdure, zucchine ripiene e piatti del giorno</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/tonno-papavero.jpg" alt="Tonno in crosta di semi di papavero affettato" loading="lazy">
+        <figcaption><span>05</span> Il tonno in crosta di semi di papavero</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/schiacciata.png" alt="Schiacciata farcita appena sfornata sul tagliere" loading="lazy">
+        <figcaption><span>06</span> La schiacciata farcita, dal forno al tagliere</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/pesce-zucchine.jpg" alt="Filetti di pesce in crosta di zucchine impiattati a mano" loading="lazy">
+        <figcaption><span>07</span> Il pesce in crosta di zucchine, impiattato uno a uno</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/croissant-farciti.jpg" alt="Croissant salati farciti su tagliere di legno" loading="lazy">
+        <figcaption><span>★</span> I croissant salati farciti, anche per il catering</figcaption>
+      </figure>
+      <figure class="cat-item wide">
+        <img src="img/banco-pranzo.jpg" alt="Il banco del pranzo al completo: primi, secondi, verdure e insalate" loading="lazy">
+        <figcaption><span>08</span> Il banco del pranzo al completo: arrosti, gamberi, riso venere e verdure di stagione</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="pasticceria" style="background:var(--beige2)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Il dolce</span>
+      <h2>La pasticceria</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="cat-grid stagger">
+      <figure class="cat-item big">
+        <img src="img/mignon.png" alt="Alzata di mignon: Pesca di Prato, mousse al caffè, babà alla crema" loading="lazy">
+        <figcaption><span>01</span> I mignon: Pesca di Prato, mousse al caffè, babà alla crema</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/pesche-di-prato.png" alt="Le Pesche di Prato con crema e alchermes" loading="lazy">
+        <figcaption><span>02</span> Le Pesche di Prato: il dolce della tradizione, con alchermes e crema</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/bigne-laboratorio.png" alt="Bignè formati a mano con la sac à poche in laboratorio" loading="lazy">
+        <figcaption><span>03</span> I bignè, uno a uno dalla sac à poche</figcaption>
+      </figure>
+      <figure class="cat-item wide">
+        <img src="img/vetrina-dolci.jpg" alt="La vetrina della pasticceria: cannoli, dita alla crema, crostatine e mignon" loading="lazy">
+        <figcaption><span>★</span> La vetrina: cannoli, dita alla crema, crostatine — il banco che ha conquistato il Gambero</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/tartelletta-frutti.jpg" alt="Sfoglia con crema e frutti di bosco freschi" loading="lazy">
+        <figcaption><span>05</span> La sfoglia ai frutti di bosco, montata al momento</figcaption>
+      </figure>
+      <figure class="cat-item big">
+        <img src="img/torta-tuttobene.jpg" alt="Il profiterole nella cesta di croccante con la placchetta Tuttobene" loading="lazy" style="object-position:center 42%">
+        <figcaption><span>04</span> Il profiterole nella cesta di croccante, firmato Tuttobene</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="arte">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Il mestiere</span>
+      <h2>L'arte italiana, ogni giorno</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="craft-grid">
+      <div>
+        <div class="craft-item reveal">
+          <div class="craft-ico"><svg viewBox="0 0 24 24"><path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M17 10h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M8 5c0-1 1-1 1-2M12 5c0-1 1-1 1-2"/></svg></div>
+          <div>
+            <h3>Il cappuccino all'italiana</h3>
+            <p>Miscela selezionata, latte montato a crema fine e lucida, servito alla temperatura giusta. Il rito della colazione italiana, eseguito con la cura che il Corriere ha definito tra le migliori di sempre.</p>
+          </div>
+        </div>
+        <div class="craft-item reveal">
+          <div class="craft-ico"><svg viewBox="0 0 24 24"><path d="M3 17c2-7 7-11 9-11s7 4 9 11c-3 1-6 2-9 2s-6-1-9-2z"/><path d="M12 6v13M8 8.5 10 18M16 8.5 14 18"/></svg></div>
+          <div>
+            <h3>Le paste & i lievitati</h3>
+            <p>Una ventina di lievitati ogni mattina: brioche, focacce, cremini, scendiletto, sfoglie alla crema. Tutto di produzione propria, dal laboratorio direttamente alla vetrina.</p>
+          </div>
+        </div>
+        <div class="craft-item reveal">
+          <div class="craft-ico"><svg viewBox="0 0 24 24"><path d="M6 3v7a3 3 0 0 0 6 0V3M9 3v18M16 3c2 1 3 4 3 7s-1 5-3 5v6"/></svg></div>
+          <div>
+            <h3>Gastronomia & cucina toscana</h3>
+            <p>Piatti toscani cucinati sul posto, punto pranzo frequentatissimo, enoteca da veri intenditori e uno shop di prodotti ricercati per portare il Tuttobene a casa.</p>
+          </div>
+        </div>
+        <div class="craft-item reveal">
+          <div class="craft-ico"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M5 4h14l-1.5 8a5.5 5.5 0 0 1-11 0L5 4z"/></svg></div>
+          <div>
+            <h3>Feste, aperitivi & catering</h3>
+            <p>Dall'ape al buffet, dal coffee break aziendale alla cena placée: il Tuttobene porta fuori dalle sue mura la stessa cura del banco. Matrimoni, battesimi, compleanni e meeting di lavoro, con la mise en place curata in ogni dettaglio — lino, calici, fiori freschi — e una cucina che prepara tutto in giornata: taglieri, finger food, primi espressi e pasticceria mignon. Gli ampi spazi dal design industriale-chic ospitano gli eventi privati, su terrazza o in sala; oppure è la brigata a raggiungervi, ovunque sia la festa.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="arte-photo reveal">
+        <img src="img/cappuccino-sfogliatina.png" alt="Cappuccino e sfogliatina del Tuttobene" loading="lazy">
+        <figcaption>Cappuccino e sfogliatina: la colazione com'è giusto che sia.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="aperitivo" style="background:var(--beige)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Quando cala la sera</span>
+      <h2>Aperitivo & Enoteca</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="cat-grid stagger">
+      <figure class="cat-item wide">
+        <img src="img/sala-aperitivo.png" alt="La sala del Tuttobene all'ora dell'aperitivo con taglieri sui tavoli" loading="lazy">
+        <figcaption><span>01</span> L'ora dell'aperitivo: taglieri, crostini e calici nella sala</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/spritz.png" alt="Spritz con oliva su forchettina di legno" loading="lazy">
+        <figcaption><span>02</span> Lo spritz della casa, con l'oliva</figcaption>
+      </figure>
+      <figure class="cat-item big">
+        <img src="img/cocktail-americano.jpg" alt="L'Americano del Tuttobene: Campari, vermouth e soda" loading="lazy">
+        <figcaption><span>03</span> L'Americano: Campari, vermouth, soda — firmato Tuttobene</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/cocktail-mule.jpg" alt="Moscow Mule con vodka, ginger beer e succo di limone" loading="lazy">
+        <figcaption><span>04</span> Il Moscow Mule, raccontato ingrediente per ingrediente</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/aperitivo-still.jpg" alt="Il set dell'aperitivo Tuttobene con calice, olive e stuzzichini" loading="lazy">
+        <figcaption><span>05</span> L'aperitivo: calice, olive e stuzzicheria della casa</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GADGET & BOTTEGA ============ -->
+<section id="gadget" style="background:var(--bianco)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">La bottega</span>
+      <h2>Gadget & Merchandising</h2>
+      <div class="rule"></div>
+    </div>
+    <p class="reveal" style="max-width:760px;color:var(--grigio);font-size:1.12rem;margin-bottom:44px">Ogni stagione il Tuttobene si veste a festa: fornitori locali e piccoli artigiani portano nel locale oggetti curiosi, idee regalo e pezzi che cambiano con le festività. Dalle teste di moro siciliane ai calendari dell'avvento, ogni angolo racconta qualcosa — e quasi tutto si può portare a casa.</p>
+    <div class="cat-grid stagger">
+      <figure class="cat-item big">
+        <img src="img/gadget-teste-moro.jpg" alt="Le teste di moro siciliane in ceramica esposte nel locale" loading="lazy">
+        <figcaption><span>01</span> Le teste di moro siciliane, ceramiche dipinte a mano</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/gadget-babbo.jpg" alt="Targa in legno con scritta in fiorentino babbo tussei immeglio" loading="lazy">
+        <figcaption><span>02</span> «Babbo tussei immeglio!» — l'ironia toscana in legno</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/gadget-ventaglio.jpg" alt="Ventaglio I'm chilling con peperoncini davanti alla vetrina dei gin" loading="lazy">
+        <figcaption><span>03</span> Idee regalo che strappano un sorriso</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/gadget-lampadari.jpg" alt="Lampadari colorati in stoffa appesi al soffitto" loading="lazy">
+        <figcaption><span>04</span> Le installazioni in stoffa che colorano il soffitto</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/gadget-nio.jpg" alt="Cofanetto NIO Cocktails con bicchieri e lampada" loading="lazy">
+        <figcaption><span>05</span> Cofanetti e selezioni per il regalo giusto</figcaption>
+      </figure>
+      <figure class="cat-item big">
+        <img src="img/gadget-avvento.jpg" alt="L'albero dei calendari dell'avvento nel corridoio del locale" loading="lazy">
+        <figcaption><span>06</span> L'albero dei calendari dell'avvento, tra le corsie della bottega</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/locale-posters.jpg" alt="I poster vintage dei concerti sotto la scala" loading="lazy">
+        <figcaption><span>08</span> I poster d'epoca sotto la scala: Rolling Stones e James Brown</figcaption>
+      </figure>
+
+      <figure class="cat-item">
+        <img src="img/gadget-sanvalentino.jpg" alt="Cioccolatini e cuori di San Valentino in vetrina" loading="lazy">
+        <figcaption><span>07</span> San Valentino: cuori, cioccolato e fiocchi rossi</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="igvideo" style="background:var(--bianco)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Il Tuttobene in movimento</span>
+      <h2>Il locale in video</h2>
+      <div class="rule"></div>
+    </div>
+    <p class="reveal" style="max-width:700px;color:var(--grigio);font-size:1.12rem;margin-bottom:44px">Il banco, le paste, l'atmosfera: i video raccontati direttamente dal profilo Instagram del Tuttobene. Tocca un video per aprirlo su Instagram.</p>
+    <div class="vid-grid stagger">
+      <div class="vid-card">
+        <span class="vid-tag">Le installazioni</span>
+        <video src="videos/locale1.mp4" poster="videos/posters/locale1.jpg" muted loop playsinline preload="metadata"></video>
+          <div class="vid-cap">Le installazioni di carta sospese sopra la sala: ogni stagione una scenografia nuova</div>
+        <button class="vid-mute" aria-label="Audio"><svg class="ico-off" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3 3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4 9.91 6.09 12 8.18V4z"/></svg><svg class="ico-on" viewBox="0 0 24 24" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+      </div>
+      <div class="vid-card">
+        <span class="vid-tag">Il gelato della casa</span>
+        <video src="videos/locale2.mp4" poster="videos/posters/locale2.jpg" muted loop playsinline preload="metadata"></video>
+          <div class="vid-cap">La crema appena mantecata nel laboratorio, ancora tiepida di lavorazione</div>
+        <button class="vid-mute" aria-label="Audio"><svg class="ico-off" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3 3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4 9.91 6.09 12 8.18V4z"/></svg><svg class="ico-on" viewBox="0 0 24 24" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+      </div>
+      <div class="vid-card">
+        <span class="vid-tag">Tuttobene vibes</span>
+        <video src="videos/locale3.mp4" poster="videos/posters/locale3.jpg" muted loop playsinline preload="metadata"></video>
+          <div class="vid-cap">Tuttobene vibes: la vetrina del banco che cambia faccia ogni settimana</div>
+        <button class="vid-mute" aria-label="Audio"><svg class="ico-off" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3 3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4 9.91 6.09 12 8.18V4z"/></svg><svg class="ico-on" viewBox="0 0 24 24" style="display:none"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="famiglia" style="background:var(--beige2)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Il gruppo</span>
+      <h2>La famiglia Tuttobene</h2>
+      <div class="rule"></div>
+    </div>
+    <p class="reveal" style="max-width:740px;margin-bottom:48px;font-size:1.15rem;color:var(--grigio)">Sei locali nell'hinterland fiorentino, ognuno autogestito ma legato dallo stesso spirito: «Preferiamo che la singola struttura abbia la propria autonomia, pur riportando il marchio TuttoBene».</p>
+    <div class="press-grid stagger">
+      <div class="press-card tilt">
+        <div class="src">La casa madre</div>
+        <div class="big">Tuttobene</div>
+        <p>Via San Quirico 233/A, zona industriale di Campi Bisenzio. Bar, pasticceria, punto pranzo, laboratorio di pasta fresca, enoteca e shop.</p>
+        <span class="loc-tag">Campi Bisenzio</span>
+      </div>
+      <div class="press-card tilt">
+        <div class="src">Il nuovo capitolo</div>
+        <div class="big">Bar Quotidiano</div>
+        <p>Aperto dalle storiche collaboratrici con la partecipazione di Marco e Claudio, nel Macrolotto verso Prato. Stessa impronta TB: pasticceria, pasta fresca, colazioni e aperitivi.</p>
+        <span class="loc-tag">Macrolotto · Prato</span>
+      </div>
+      <div class="press-card tilt">
+        <div class="src">La Prato che fu</div>
+        <div class="big">Dovec'eralacoppe</div>
+        <p>In via Udine a Prato, parte del gruppo Tuttobene: un omaggio alla vecchia Prato tessile, tra vetro retato e pancali dei lanifici.</p>
+        <span class="loc-tag">Prato</span>
+      </div>
+      <div class="press-card tilt">
+        <div class="src">Dove tutto è iniziato</div>
+        <div class="big">Calenzano</div>
+        <p>Le radici del gruppo: dal Bar Tucano del 1982 al Barsport, la zona dove Marco e Claudio hanno imparato il mestiere e formato generazioni di baristi.</p>
+        <span class="loc-tag">Calenzano</span>
+      </div>
+    </div>
+      <figure class="cat-item wide reveal" style="height:380px;margin-top:40px">
+      <img src="img/quotidiano-team.jpg" alt="La squadra del Bar Quotidiano al completo davanti al banco" loading="lazy" style="object-position:center 40%">
+      <figcaption><span>TB</span> La squadra del Bar Quotidiano: i talenti cresciuti al Tuttobene, oggi padroni di casa</figcaption>
+    </figure>
+</div>
+</section>
+
+<section class="cinema">
+  <video src="videos/locale1.mp4" poster="videos/posters/locale1.jpg" autoplay muted loop playsinline></video>
+  <div class="cinema-inner reveal">
+    <span class="label">Dal 1982</span>
+    <h2>&laquo;Quando il gusto diventa poesia&hellip;<br>il piacere raddoppia&raquo;</h2>
+  </div>
+</section>
+
+<section id="catering" style="background:var(--beige)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Fuori dal locale</span>
+      <h2>Il Catering Tuttobene</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="cat-intro reveal">
+      <p>Il Tuttobene viene da voi: matrimoni, eventi aziendali, feste in giardino. Taglieri preparati al momento, panini gourmet farciti davanti agli ospiti, postazioni champagne e allestimenti curati in ogni dettaglio — fiori freschi compresi.</p>
+      <a class="cat-cta" href="#prenota">Prenota il tuo evento</a>
+    </div>
+    <div class="cat-grid stagger">
+      <figure class="cat-item big">
+        <img src="img/catering-taglieri.jpg" alt="Buffet all'aperto con taglieri di salumi e formaggi" loading="lazy">
+        <figcaption><span>01</span> Taglieri sotto gli alberi — salumi affettati al momento e formaggi del territorio, serviti su legno</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/catering-panini.jpg" alt="Panini gourmet preparati al momento dal banco catering" loading="lazy">
+        <figcaption><span>02</span> Panini gourmet farciti davanti agli ospiti, uno a uno</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/catering-champagne.jpg" alt="Postazione champagne con secchielli dorati e calici" loading="lazy">
+        <figcaption><span>03</span> La postazione champagne, con bottiglie in ghiaccio e calici pronti</figcaption>
+      </figure>
+      <figure class="cat-item">
+        <img src="img/catering-tavola.jpg" alt="Tavola elegante sotto il tendone bianco con calici e ortensie" loading="lazy">
+        <figcaption><span>★</span> La mise en place sotto il tendone: calici, lino e ortensie</figcaption>
+      </figure>
+      <figure class="cat-item wide">
+        <img src="img/catering-allestimento.jpg" alt="Allestimento scenografico con crostini e decorazioni dorate" loading="lazy">
+        <figcaption><span>04</span> Allestimenti scenografici — crostini, fiori freschi e dettagli che fanno la differenza</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="prenota">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="label">Eventi & spazi</span>
+      <h2>Prenota il tuo momento TB</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="book-copy reveal">
+      <p>Una festa di compleanno, un incontro di lavoro, un buffet o un aperitivo privato: gli spazi del Tuttobene — sala, terrazza panoramica e angolo enoteca — sono a vostra disposizione.</p>
+      <p>Catering fuori sede o evento al locale: una telefonata e organizziamo tutto insieme.</p>
+      <div class="call-row">
+        <a class="call-btn" href="tel:+390558969529">
+          <span class="ico"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+          <span><span class="sans">Chiama il Tuttobene</span><strong>055 896 9529</strong></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo" style="color:#F6F1E8">
+          <svg viewBox="0 0 464 90"><use href="#tb-logo"/></svg>
+        </div>
+        <p style="font-style:italic">Quando il gusto diventa poesia…<br>il piacere raddoppia.</p>
+      </div>
+      <div>
+        <h4>Dove siamo</h4>
+        <p>Via San Quirico, 233/A<br>50013 Campi Bisenzio (FI)</p>
+        <p><a href="tel:+390558969529">055 896 9529</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Lun – Ven: 6.30 – 20.00<br>Sabato: 6.30 – 14.30<br>Domenica: chiuso</p>
+      </div>
+      <div>
+        <h4>Seguici</h4>
+        <p><a href="https://www.instagram.com/tuttobenebar/" target="_blank" rel="noopener">Instagram · @tuttobenebar</a><br>
+        <a href="https://www.facebook.com/tuttobenebar/" target="_blank" rel="noopener">Facebook · Tuttobene</a><br>
+        <a href="https://www.tuttobene-bar.it" target="_blank" rel="noopener">tuttobene-bar.it</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Tuttobene — Campi Bisenzio</span>
+      <span>Caffetteria · Pasticceria · Pasta Fresca · Enoteca · Catering</span>
+      <span>Sito realizzato da <a href="https://luxlab.it" target="_blank" rel="noopener" class="lux-pulse" style="color:var(--rosso-vivo);text-decoration:none;letter-spacing:.2em">LUXLAB</a></span>
+    </div>
+  </div>
+</footer>
+<script src="script.js?v=10"></script>
+</body>
+</html>
